@@ -13,6 +13,7 @@ class IntroPage extends StatefulWidget {
       required this.listSubtitle,
       required this.listTitle,
       required this.totalStory,
+      this.duration,
       this.barColor,
       this.borderBarColor,
       this.backgroundColor,
@@ -26,6 +27,7 @@ class IntroPage extends StatefulWidget {
   final Color? backgroundColor;
   final Color? buttonColor;
   final int totalStory;
+  final int? duration;
   final TextStyle? labelButtonStyle;
   final TextStyle? titleStyle;
   final TextStyle? subtitleStyle;
@@ -185,7 +187,7 @@ class _IntroPageState extends State<IntroPage>
     _animController.stop();
     _animController.reset();
 
-    _animController.duration = const Duration(seconds: 7);
+    _animController.duration = Duration(seconds: widget.duration ?? 7);
     _animController.forward();
 
     if (animatedToPage) {
