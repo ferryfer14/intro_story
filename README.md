@@ -59,7 +59,7 @@ This widget allows you to create a textfield that takes in Textfield values and 
     ];
     IntroPage(
         imagesWidget: imagesWidget,
-        label: AppLocalizations.of(context)!.username,labelButton,
+        labelButton: AppLocalizations.of(context)!.username,labelButton,
         listSubtitle: subtitleWidget,
         listTitle: titleWidget,
         totalStory: 4,
