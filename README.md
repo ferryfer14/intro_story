@@ -63,6 +63,7 @@ This widget allows you to create a textfield that takes in Textfield values and 
         listSubtitle: subtitleWidget,
         listTitle: titleWidget,
         totalStory: 4,
+        duration: 7,
         barColor: primaryColor,
         borderBarColor: Colors.white,
         backgroundColor: Colors.white,
