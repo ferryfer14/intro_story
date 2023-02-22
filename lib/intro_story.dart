@@ -13,6 +13,7 @@ class IntroPage extends StatefulWidget {
       required this.listSubtitle,
       required this.listTitle,
       required this.totalStory,
+      required this.buttonOntap,
       this.duration,
       this.barColor,
       this.borderBarColor,
@@ -34,6 +35,7 @@ class IntroPage extends StatefulWidget {
   final List<Widget> imagesWidget;
   final String labelButton;
   final List<String> listTitle;
+  final Function() buttonOntap;
   final List<String> listSubtitle;
   @override
   State<IntroPage> createState() => _IntroPageState();
@@ -142,7 +144,7 @@ class _IntroPageState extends State<IntroPage>
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: PrimaryButton(
-                          onTap: () {},
+                          onTap: widget.buttonOntap,
                           title: widget.labelButton,
                           color: widget.buttonColor ?? Colors.blueAccent,
                           titleStyle: widget.titleStyle ??
