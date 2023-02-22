@@ -12,7 +12,7 @@ This widget allows you to create a textfield that takes in Textfield values and 
 
 ```yaml 
   dependencies:
-    text_field:
+    intro_story:
         git:
             url: https://github.com/ferryfer14/intro_story.git
             ref: master # branch name
