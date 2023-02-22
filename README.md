@@ -75,6 +75,6 @@ This widget allows you to create a textfield that takes in Textfield values and 
 ### Visual Samples For Above Examples
 
 Result<br/>
-<img src="https://raw.githubusercontent.com/ferryfer14/text_field/main/assets/username.png" width=250><br/>
+<img src="https://raw.githubusercontent.com/ferryfer14/intro_story/master/assets/record.gif" width=250><br/>
 
-<img src="https://raw.githubusercontent.com/ferryfer14/text_field/main/assets/username_onfocus.png" width=250><br/>
+<img src="https://raw.githubusercontent.com/ferryfer14/intro_story/master/assets/result.png" width=250><br/>
