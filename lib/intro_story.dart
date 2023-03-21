@@ -21,7 +21,8 @@ class IntroPage extends StatefulWidget {
       this.buttonColor,
       this.titleStyle,
       this.subtitleStyle,
-      this.labelButtonStyle})
+      this.labelButtonStyle,
+      this.loop = false})
       : super(key: key);
   final Color? barColor;
   final Color? borderBarColor;
@@ -37,6 +38,7 @@ class IntroPage extends StatefulWidget {
   final List<String> listTitle;
   final Function() buttonOntap;
   final List<String> listSubtitle;
+  final bool loop;
   @override
   State<IntroPage> createState() => _IntroPageState();
 }
@@ -65,10 +67,15 @@ class _IntroPageState extends State<IntroPage>
             _currentIndex += 1;
             _loadPage();
           } else {
-            _currentIndex = widget.imagesWidget.length;
-            _loadPage();
-            _animController.stop();
-            _animController.reset();
+            if (widget.loop) {
+              _currentIndex = 0;
+              _loadPage();
+            } else {
+              _currentIndex = widget.imagesWidget.length;
+              _loadPage();
+              _animController.stop();
+              _animController.reset();
+            }
           }
         });
       }
@@ -176,10 +183,15 @@ class _IntroPageState extends State<IntroPage>
           _currentIndex += 1;
           _loadPage();
         } else {
-          _currentIndex = pages.length;
-          _loadPage();
-          _animController.stop();
-          _animController.reset();
+          if (widget.loop) {
+            _currentIndex = 0;
+            _loadPage();
+          } else {
+            _currentIndex = pages.length;
+            _loadPage();
+            _animController.stop();
+            _animController.reset();
+          }
         }
       });
     }
