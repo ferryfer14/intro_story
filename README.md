@@ -71,6 +71,7 @@ This widget allows you to create a textfield that takes in Textfield values and 
         titleStyle : ts14blackBold,
         subtitleStyle : ts12black,
         labelButtonStyle : ts12white
+        loop : false
     ),
 ```
 ### Visual Samples For Above Examples
